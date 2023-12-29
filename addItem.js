@@ -1,7 +1,7 @@
 export const addItem = (e, list, textBox, items, setter) => {
   e.preventDefault()
 
-  if (!textBox.value) {
+  if (!textBox.value || textBox.value.length > 30) {
     return
   }
 
